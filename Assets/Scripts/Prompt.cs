@@ -42,6 +42,7 @@ public class Prompt : MonoBehaviour
 			{
 				state = State.Inactive;
 				active = false;
+				OnShrinkComplete();
 			}
 		}
 		child.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, lerpTimer / lerpTime);
@@ -73,4 +74,6 @@ public class Prompt : MonoBehaviour
 	}
 
 	void UpdateRotation() => child.rotation = camera.transform.rotation;
+
+	protected virtual void OnShrinkComplete() { }
 }

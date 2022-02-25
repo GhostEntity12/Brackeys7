@@ -24,9 +24,10 @@ public class PromptPickup : Prompt
 			disabled = true;
 			state = State.Shrinking;
 		}
-		if (disabled && lerpTime == 0)
-		{
-			gameObject.SetActive(false);
-		}
+	}
+
+	protected override void OnShrinkComplete()
+	{
+		gameObject.SetActive(false);
 	}
 }
