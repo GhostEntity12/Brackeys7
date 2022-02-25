@@ -19,7 +19,7 @@ public class Spirit : MonoBehaviour
 		}
 		else if (textbox && Vector3.Distance(transform.position, GameManager.Instance.camera.transform.position) > GameManager.Instance.textboxDistance)
 		{
-			textbox.state = Textbox.State.Shrinking;
+			textbox.state = State.Shrinking;
 		}
 	}
 
