@@ -17,6 +17,7 @@ public class GameManager : Singleton<GameManager>
 	protected override void Awake()
 	{
 		base.Awake();
+		Cursor.lockState = CursorLockMode.Locked;
 		camera = Camera.main;
 		textboxPool = FindObjectOfType<TextboxPool>();
 		player = FindObjectOfType<Player>().gameObject;

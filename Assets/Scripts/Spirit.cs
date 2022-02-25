@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spirit : MonoBehaviour
 {
-	[SerializeField] private string dialogue;
+	[SerializeField, Multiline] private string dialogue;
 	public string Dialogue => dialogue;
 
 	Textbox textbox;
