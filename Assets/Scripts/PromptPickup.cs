@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PromptPickup : Prompt
@@ -29,6 +27,9 @@ public class PromptPickup : Prompt
 
 	protected override void OnShrinkComplete()
 	{
-		gameObject.SetActive(false);
+		if (disabled)
+		{
+			gameObject.SetActive(false);
+		}
 	}
 }
