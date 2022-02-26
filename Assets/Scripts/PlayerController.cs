@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
-		movement = UniformInput.GetAnalogStick();
+		movement = GameManager.Instance.canMove ? UniformInput.GetAnalogStick() : Vector3.zero;
 		yaw += yawSpeed * Input.GetAxis("Mouse X");
 		pitch -= pitchSpeed * Input.GetAxis("Mouse Y");
 		pitch = Mathf.Clamp(pitch, -40, 80);

@@ -7,6 +7,8 @@ public class GameManager : Singleton<GameManager>
 	public GameObject player;
     public int textboxDistance = 50;
 	public float textboxBuffer = 3;
+	public CanvasGroup canvas;
+	public bool canMove = true;
 
 	[HideInInspector]
     new public Camera camera;
