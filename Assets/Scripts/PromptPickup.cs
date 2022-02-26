@@ -5,6 +5,7 @@ using UnityEngine;
 public class PromptPickup : Prompt
 {
 	bool disabled;
+	public GameManager.PickupsFlag type;
 
 	// Start is called before the first frame update
 	protected override void Awake()
@@ -20,7 +21,7 @@ public class PromptPickup : Prompt
 		if (!disabled && active && Input.GetKeyDown(key))
 		{
 
-			Debug.Log("Picked Up");
+			GameManager.Instance.SetFlag(type);
 			disabled = true;
 			state = State.Shrinking;
 		}
