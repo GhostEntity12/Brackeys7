@@ -39,7 +39,6 @@ public class PromptLeave : MonoBehaviour
 				}
 				else
 				{
-					Debug.Log(timer);
 					switch (timer)
 					{
 						case float i when i < 4f:

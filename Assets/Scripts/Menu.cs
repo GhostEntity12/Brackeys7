@@ -12,6 +12,7 @@ public class Menu : MonoBehaviour
 	bool optionSelected = false;
 	delegate void MenuAction();
 	event MenuAction MenuActionEvent;
+	public AudioSource audio;
 
 	// Start is called before the first frame update
 	void Start()
@@ -25,6 +26,7 @@ public class Menu : MonoBehaviour
 		if (optionSelected)
 		{
 			fade.alpha += Time.deltaTime * 1.5f;
+			audio.volume = 1 - fade.alpha;
 			if (fade.alpha == 1)
 			{
 				MenuActionEvent?.Invoke();
