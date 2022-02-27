@@ -7,6 +7,7 @@ public class PromptLeave : MonoBehaviour
 	bool? endingType;
 	float timer = 0f;
 	public CanvasGroup text;
+	public AudioSource audio;
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player"))
@@ -29,6 +30,7 @@ public class PromptLeave : MonoBehaviour
 		{
 			timer += Time.deltaTime;
 			GameManager.Instance.canvas.alpha += Time.deltaTime * 1.5f;
+			audio.volume -= Time.deltaTime;
 			if (GameManager.Instance.canvas.alpha == 1)
 			{
 				if (endingType == true)
@@ -37,10 +39,18 @@ public class PromptLeave : MonoBehaviour
 				}
 				else
 				{
-					text.alpha += Time.deltaTime * 1.2f;
-					if (timer > 4f)
+					Debug.Log(timer);
+					switch (timer)
 					{
-						SceneManager.LoadScene(0);
+						case float i when i < 4f:
+							text.alpha += Time.deltaTime * 1.2f;
+							break;
+						case float i when i > 7.5f:
+							SceneManager.LoadScene(0);
+							break;
+						case float i when i > 6f:
+							text.alpha -= Time.deltaTime;
+							break;
 					}
 				}
 			}

@@ -12,6 +12,12 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 			return;
 		}
 		Instance = this as T;
+		//DontDestroyOnLoad(this);
 	}
-	public static void Deregister() => Instance = null;
+	public void Deregister()
+	{
+		T i = Instance;
+		Instance = null;
+		Destroy(i.gameObject);
+	}
 }

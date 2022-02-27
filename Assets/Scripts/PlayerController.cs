@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 	[Space(10)]
 	public float yawSpeed = 2.0f;
 	public float pitchSpeed = 2.0f;
-	private float yaw = 0.0f;
+	private float yaw = -30.0f;
 	private float pitch = 0.0f;
 
 	void Awake()
