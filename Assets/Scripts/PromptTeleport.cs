@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PromptTeleport : Prompt
@@ -35,7 +33,7 @@ public class PromptTeleport : Prompt
 		if (active && Input.GetKeyDown(key) && holdTimer == 0)
 		{
 			fading = FadeStatus.In;
-			holdTimer = 2;
+			holdTimer = holdTime;
 		}
 
 		switch (fading)

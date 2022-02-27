@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
@@ -15,4 +13,5 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 		Instance = this as T;
 	}
+	public static void Deregister() => Instance = null;
 }
