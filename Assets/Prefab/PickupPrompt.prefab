@@ -202,7 +202,7 @@ MonoBehaviour:
   m_text: A   Enter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8219009d76748ec42af52302901f5c6f, type: 2}
-  m_sharedMaterial: {fileID: 2865390309926948384, guid: 8219009d76748ec42af52302901f5c6f, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: d68072b68ba923d48afb28f614a4b6b2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -327,5 +327,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 112
+  action: 
   lerpTime: 0.1
   type: 0

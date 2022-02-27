@@ -6,6 +6,7 @@ public class Prompt : MonoBehaviour
 {
 	public KeyCode key;
 	protected TextMeshProUGUI prompt;
+	public string action;
 	Transform child;
 	protected bool active;
 	new Camera camera;
@@ -17,7 +18,7 @@ public class Prompt : MonoBehaviour
 	protected virtual void Awake()
 	{
 		prompt = GetComponentInChildren<TextMeshProUGUI>();
-		prompt.text = key.ToString();
+		prompt.text = $"{key}   {action}";
 		child = transform.GetChild(0);
 		camera = GameManager.Instance.camera;
 	}

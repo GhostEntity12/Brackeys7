@@ -1344,6 +1344,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
+      propertyPath: action
+      value: Enter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
       propertyPath: teleportPoint
       value: 
       objectReference: {fileID: 1191946403}
@@ -2981,8 +2985,16 @@ PrefabInstance:
       value: PickupPrompt
       objectReference: {fileID: 0}
     - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
+      propertyPath: key
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
       propertyPath: type
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
+      propertyPath: action
+      value: Pick up
       objectReference: {fileID: 0}
     - target: {fileID: 1669853552543052635, guid: 07e37467c9a169042881520f52b95dca, type: 3}
       propertyPath: m_Radius
@@ -6498,6 +6510,10 @@ PrefabInstance:
     - target: {fileID: 5064716378157817923, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
+      propertyPath: action
+      value: Enter
       objectReference: {fileID: 0}
     - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
       propertyPath: teleportPoint
@@ -17262,8 +17278,16 @@ PrefabInstance:
       value: PickupPrompt
       objectReference: {fileID: 0}
     - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
+      propertyPath: key
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
       propertyPath: type
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
+      propertyPath: action
+      value: Pick up
       objectReference: {fileID: 0}
     - target: {fileID: 1669853552543052635, guid: 07e37467c9a169042881520f52b95dca, type: 3}
       propertyPath: m_Radius
@@ -20541,6 +20565,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
+      propertyPath: action
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
       propertyPath: teleportPoint
       value: 
       objectReference: {fileID: 1027150236}
@@ -23302,8 +23330,16 @@ PrefabInstance:
       value: PickupPrompt
       objectReference: {fileID: 0}
     - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
+      propertyPath: key
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
       propertyPath: type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
+      propertyPath: action
+      value: Pick up
       objectReference: {fileID: 0}
     - target: {fileID: 1669853552543052635, guid: 07e37467c9a169042881520f52b95dca, type: 3}
       propertyPath: m_Radius
@@ -26247,6 +26283,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
+      propertyPath: action
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
       propertyPath: teleportPoint
       value: 
       objectReference: {fileID: 512541916}
@@ -29060,8 +29100,16 @@ PrefabInstance:
       value: PickupPrompt (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
+      propertyPath: key
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
       propertyPath: type
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669853552543052634, guid: 07e37467c9a169042881520f52b95dca, type: 3}
+      propertyPath: action
+      value: Pick up
       objectReference: {fileID: 0}
     - target: {fileID: 1669853552543052635, guid: 07e37467c9a169042881520f52b95dca, type: 3}
       propertyPath: m_Radius
@@ -31951,6 +31999,10 @@ PrefabInstance:
     - target: {fileID: 5064716378157817923, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
+      propertyPath: action
+      value: Enter
       objectReference: {fileID: 0}
     - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
       propertyPath: teleportPoint
@@ -37358,6 +37410,10 @@ PrefabInstance:
     - target: {fileID: 5064716378157817923, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
+      propertyPath: action
+      value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 5064716378157817925, guid: 14148ab6a3d9c2d4b9174c03cafe8648, type: 3}
       propertyPath: teleportPoint

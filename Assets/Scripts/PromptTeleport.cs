@@ -13,14 +13,6 @@ public class PromptTeleport : Prompt
 	FadeStatus fading = FadeStatus.None;
 	public float bsTimer = 0.3f;
 
-
-	protected override void Awake()
-	{
-		base.Awake();
-
-		prompt.text += "   Enter";
-	}
-
 	protected override void Update()
 	{
 		base.Update();

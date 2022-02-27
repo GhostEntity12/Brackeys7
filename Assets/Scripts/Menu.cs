@@ -40,7 +40,11 @@ public class Menu : MonoBehaviour
 
 	public void Quit()
 	{
-		MenuActionEvent = () => Application.Quit();
+		MenuActionEvent = () =>
+#if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+#endif
+		Application.Quit();
 		optionSelected = true;
 	}
 	public void LoadScene(int i)

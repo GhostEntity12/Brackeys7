@@ -17,7 +17,6 @@ public class GameManager : Singleton<GameManager>
 
 	bool cluesMoving = false;
 	float moveTimeCache;
-	float cluesCacheX;
 
 	PickupsFlag pickups;
 	public bool AllPickups => pickups.HasFlag(PickupsFlag.Everything);
@@ -44,7 +43,6 @@ public class GameManager : Singleton<GameManager>
 		camera = Camera.main;
 		textboxPool = FindObjectOfType<TextboxPool>();
 		player = FindObjectOfType<Player>().gameObject;
-		cluesCacheX = clues.position.x;
 	}
 
 	public void SetFlag(PickupsFlag flag)
@@ -85,14 +83,15 @@ public class GameManager : Singleton<GameManager>
 		{
 			float t = Time.time - moveTimeCache;
 
+			Debug.Log(t);
 			switch (t)
 			{
-				case float f when f < 1:
-					clues.position = new Vector2(cluesCacheX, Mathf.Lerp(-120, 0, t));
+				case float f when f < 1.2:
+					clues.anchoredPosition = new Vector2(0, Mathf.SmoothStep(-120, 0, t));
 					break;
-				case float f when f > 3:
-					clues.position = new Vector2(cluesCacheX, Mathf.Lerp(0, -120, t - 3));
-					if (clues.position.y == -120)
+				case float f when f > 3.2:
+					clues.anchoredPosition = new Vector2(0, Mathf.SmoothStep(0, -120, t - 3));
+					if (clues.anchoredPosition.y == -120)
 					{
 						cluesMoving = false;
 					}
@@ -100,6 +99,7 @@ public class GameManager : Singleton<GameManager>
 				default:
 					break;
 			}
+			Debug.Log(clues.position.y);
 		}
 	}
 

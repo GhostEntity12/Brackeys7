@@ -6,12 +6,6 @@ public class PromptPickup : Prompt
 	public GameManager.PickupsFlag type;
 
 	// Start is called before the first frame update
-	protected override void Awake()
-	{
-		base.Awake();
-
-		prompt.text += "   Pick Up";
-	}
 
 	protected override void Update()
 	{
