@@ -447,8 +447,21 @@ MonoBehaviour:
   textboxBuffer: 7
   canvas: {fileID: 1166246573}
   canMove: 1
+  canLook: 1
+  clues: {fileID: 0}
+  pickupImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  pickupSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   camera: {fileID: 0}
   textboxPool: {fileID: 197204929}
+  pauseMenu: {fileID: 0}
 --- !u!114 &197204931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,7 +643,7 @@ Transform:
   m_GameObject: {fileID: 844214186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.92, y: 1, z: -6.05}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1631,8 +1644,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969801587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.36, y: 1, z: -5.74}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
